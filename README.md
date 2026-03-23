@@ -1,6 +1,8 @@
-#  Smart Waste Sorting System 
+#  Smart System for Waste Sorting
 
 An AI-powered waste sorting system that efficiently classifies waste into categories such as **recyclable, compostable, non-recyclable, dry, and wet waste**. This system helps reduce contamination in recycling streams and increases material recovery rates.
+
+---
 
 ##  Features
 
@@ -29,24 +31,61 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
 - **View Waste Locations on a Map** 
   - Interactive map showing all reported waste locations.
 
+---
+## **System Architecture**
+The Smart Waste Sorting System uses a web-based frontend connected to a Flask backend that handles authentication, application logic, and communication with AI modules and the database. An AI waste detection module powered by TensorFlow, OpenCV, and deep learning models (CNN/YOLO/SSD) classifies waste from uploaded images and live camera input. A MySQL database and map interface store and display user data and waste locations, enabling tracking and management through user and admin dashboards.
+
+![Img2](system%20images/architecture.png)
+
+---
+
 ## **Technology Used**
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Flask (Python)
 - **Machine Learning**: TensorFlow, OpenCV, CNN, YOLO/SSD for object detection
 - **Database**: MySQL (for user data and waste location tracking)
 
+---
+
 ## **Screenshots**
+**Dashboard**
+<p align="center">
+  <img src="system%20images/dashboard.png" width="45%" />
+  <img src="system%20images/userlogin.png" width="45%" />
+</p>
 
-### Main Page:
-![Screenshot (337)](https://github.com/user-attachments/assets/c6c35f81-2400-40df-88f6-e6709b7d3bb1)
+**User Dashboard**
+![Img1](system%20images/user.png)
 
-### Login Page:
-![Screenshot (338)](https://github.com/user-attachments/assets/77b2c7fe-6158-4650-a62d-0d89b5e6fa7b)
+**Waste Detection by Uploading Images** 
+<p align="center">
+  <img src="system%20images/imageupload.png" width="45%" />
+  <img src="system%20images/imageupload1.png" width="45%" />
+</p>
 
-### User Dashboard
-![Screenshot (339)](https://github.com/user-attachments/assets/5e85a55b-f738-496a-a17a-affbd09f072a)
+**Real Time waste detection**
+<p align="center">
+  <img src="system%20images/real.png" width="30%" />
+  <img src="system%20images/real1.png" width="30%" />
+  <img src="system%20images/real2.png" width="30%" />
+  
+</p>
+<p align="center">
+  <img src="system%20images/real4.png" width="30%" />
+  <img src="system%20images/real5.png" width="30%" />
+  <img src="system%20images/real6.png" width="30%" />
+</p>
 
-### Admin Dashboard:
-![Screenshot (341)](https://github.com/user-attachments/assets/f03b5f19-6515-4043-a4be-77860ae2069b)
+**Location History**
+![Img2](system%20images/location.png)
 
+**Admin Dashboard**
+<p align="center">
+  <img src="system%20images/admin.png" width="45%" />
+  <img src="system%20images/adminmap.png" width="45%" />
+</p>
 
+---
+
+**Note:** 
+Due to the large number of files involved, the complete source code is not included in this repository.
